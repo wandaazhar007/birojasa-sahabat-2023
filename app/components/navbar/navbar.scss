@@ -69,11 +69,23 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
             gap: 1rem;
             color: #000;
             font-size: 1.5rem;
-          }
 
-          img {
-            width: 5rem;
-            height: 5rem;
+            img {
+              width: 5rem;
+              height: 5rem;
+            }
+
+            h1 {
+              font-size: 2rem;
+
+              @include tablet {
+                display: none;
+              }
+
+              @include phone {
+                display: block;
+              }
+            }
           }
         }
 
@@ -83,14 +95,14 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
             gap: 3rem;
             list-style: none;
 
-            @include tablet {
+            @include phone {
               position: fixed;
               left: 0;
               bottom: 0;
               display: flex;
               justify-content: space-around;
               width: 100%;
-              padding: 1.5rem 0;
+              padding: 1.5rem 1rem;
               box-shadow: var(--box-shadow);
               border-top: .01rem solid grey;
               background-color: #fff;
@@ -104,35 +116,34 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
                 font-size: 1.8rem;
                 color: #000;
 
-                @include tablet {
+                @include phone {
                   display: flex;
                   flex-direction: column;
                   gap: .2rem;
-                  font-size: 1.3rem;
                 }
+              }
 
-                .active {
-                  color: $primary;
-                  position: relative;
-                  font-weight: 700;
+              a.active {
+                color: $primary;
+                position: relative;
+                font-weight: 700;
 
-                  &::after {
+                &::after {
+                  content: '';
+                  height: .2rem;
+                  width: 100%;
+                  background-color: $primary;
+                  position: absolute;
+                  margin-top: 3.5rem;
+
+                  @include phone {
                     content: '';
-                    height: .2rem;
+                    height: .9rem;
+                    border-radius: .5rem;
                     width: 100%;
-                    background-color: $primary;
+                    background-color: var(--primary);
                     position: absolute;
-                    margin-top: 3.5rem;
-
-                    @include tablet {
-                      content: '';
-                      height: .9rem;
-                      border-radius: .5rem;
-                      width: 100%;
-                      background-color: var(--primary);
-                      position: absolute;
-                      margin-top: -1.5rem;
-                    }
+                    margin-top: -1.5rem;
                   }
                 }
               }
@@ -143,7 +154,7 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
             width: 2.5rem;
             display: none;
 
-            @include tablet {
+            @include phone {
               width: 2rem;
               display: inline-block;
             }

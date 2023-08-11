@@ -1,0 +1,163 @@
+/*
+Author: Wanda Azhar
+Location: Michigan, USA
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+@import '../../styles/variable.scss';
+@import '../../styles//responsive.scss';
+
+#menu-icon {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+    width: 3rem;
+  }
+}
+
+.navbar {
+  .warning {
+    text-align: center;
+    font-size: 1.7rem;
+    width: 100%;
+    background-color: antiquewhite;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 3rem;
+    z-index: 9;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+
+    @include tablet {
+      top: 0;
+    }
+
+    .container {
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+          a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #000;
+            font-size: 1.5rem;
+          }
+
+          img {
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+
+        .nav {
+          ul {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+
+            @include tablet {
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              display: flex;
+              justify-content: space-around;
+              width: 100%;
+              padding: 1.5rem 0;
+              box-shadow: var(--box-shadow);
+              border-top: .01rem solid grey;
+              background-color: #fff;
+            }
+
+            li {
+              a {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                font-size: 1.8rem;
+                color: #000;
+
+                @include tablet {
+                  display: flex;
+                  flex-direction: column;
+                  gap: .2rem;
+                  font-size: 1.3rem;
+                }
+
+                .active {
+                  color: $primary;
+                  position: relative;
+                  font-weight: 700;
+
+                  &::after {
+                    content: '';
+                    height: .2rem;
+                    width: 100%;
+                    background-color: $primary;
+                    position: absolute;
+                    margin-top: 3.5rem;
+
+                    @include tablet {
+                      content: '';
+                      height: .9rem;
+                      border-radius: .5rem;
+                      width: 100%;
+                      background-color: var(--primary);
+                      position: absolute;
+                      margin-top: -1.5rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .link-icons {
+            width: 2.5rem;
+            display: none;
+
+            @include tablet {
+              width: 2rem;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.margin-navbar {
+  height: 9.3rem;
+
+  @include tablet {
+    height: 6.3rem;
+  }
+}

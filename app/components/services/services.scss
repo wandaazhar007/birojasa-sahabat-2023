@@ -1,0 +1,150 @@
+/*
+Author: Wanda Azhar
+Location: Michigan, USA
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+@import '../../styles/variable.scss';
+@import '../../styles//responsive.scss';
+
+.services {
+  padding: 5rem 0;
+
+  .container {
+    .box-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      border-radius: 1rem;
+      padding: 5rem 2rem;
+      background-color: #E5FEFD;
+      justify-items: center;
+
+      @include miniDesktop974 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        gap: 3rem;
+      }
+
+      @include smallPhone {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        gap: 3rem;
+      }
+
+      .col-left {
+        display: flex;
+        flex-direction: column;
+        color: $grey;
+
+        .title {
+          font-size: 1.8rem;
+        }
+
+        .sub-title {
+          font-size: 2.5rem;
+          margin-top: 1rem;
+
+          span {
+            font-weight: bold;
+            font-size: 2.7rem;
+            color: $primary;
+          }
+        }
+
+        .description {
+          margin-top: 1rem;
+          font-size: 1.7rem;
+          line-height: 2.5rem;
+        }
+
+        .social-proof {
+          margin-top: 1rem;
+          font-size: 2.5rem;
+          font-style: italic;
+          font-weight: 700;
+          color: $primary;
+          text-decoration: underline;
+
+          @include largePhone {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            font-style: italic;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: underline;
+          }
+
+          span {
+            font-size: 3.5rem;
+
+            @include largePhone {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+
+      .col-right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+        justify-items: center;
+
+        @include largePhone {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          gap: 1rem;
+          justify-items: center;
+        }
+
+        .box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          width: 18rem;
+          background-color: var(--white);
+          padding: 1rem;
+          border-radius: 1.5rem;
+          box-shadow: var(--box-shadow);
+          color: var(--grey);
+          font-size: 1.2rem;
+          text-align: center;
+
+          @include tablet {
+            width: 13rem;
+            font-size: 1.4rem;
+          }
+
+          @include largePhone {
+            gap: 1.5rem;
+            width: 17rem;
+            font-size: 1.4rem;
+          }
+
+          @include smallPhone {
+            gap: 1.5rem;
+            width: 17rem;
+            font-size: 1.4rem;
+          }
+
+          .icons {
+            font-size: 3rem;
+          }
+        }
+      }
+
+
+    }
+  }
+}

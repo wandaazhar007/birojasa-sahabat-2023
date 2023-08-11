@@ -31,6 +31,12 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
   }
 }
 
+@mixin miniDesktop974 {
+  @media screen and (max-width: (974px)) {
+    @content;
+  }
+}
+
 @mixin miniDesktop {
   @media screen and (max-width: (1024px)) {
     @content;

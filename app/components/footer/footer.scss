@@ -16,7 +16,7 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
   left: 0;
   right: 0;
   padding-top: 5rem;
-  color: var(--white);
+  color: $white;
   background: black;
 
   .container {
@@ -75,10 +75,10 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
             li {
               cursor: pointer;
               line-height: 3rem;
-              color: var(--grey);
+              color: $grey;
 
               a {
-                color: var(--grey);
+                color: $grey;
                 cursor: pointer;
               }
             }
@@ -109,7 +109,7 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
           }
 
           .icons-social-media {
-            color: var(--white);
+            color: $white;
             font-size: 2.5rem;
             width: 2rem;
           }

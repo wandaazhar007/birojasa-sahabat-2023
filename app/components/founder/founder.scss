@@ -1,0 +1,92 @@
+  /*
+Author: Wanda Azhar
+Location: Michigan, US
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+  @import '../../styles/variable.scss';
+  @import '../../styles//responsive.scss';
+
+
+  .founder {
+    padding: 6rem 0;
+    color: $grey;
+    background-color: $lightGreen;
+
+    .container {
+      .title {
+        font-size: 3.8rem;
+
+        @include largePhone {
+          text-align: center;
+        }
+      }
+
+      .box-container {
+        margin-top: 4rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+
+        @include largePhone {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .box {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+          border-radius: 1rem;
+          background-color: $darkGreen;
+          gap: 1rem;
+
+          @include largePhone {
+            align-items: center;
+          }
+
+          .image-circle {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+
+          .name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: $grey;
+            margin-left: 2rem;
+          }
+
+          .icon {
+            font-size: 1.6rem;
+            color: $grey;
+            position: absolute;
+            margin-top: .4rem;
+          }
+
+          .title {
+            font-size: 1.6rem;
+            margin-top: -.5rem;
+          }
+
+          .desc {
+            font-size: 1.8rem;
+            line-height: 3rem;
+
+            span {
+              font-style: italic;
+              color: $primary;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }

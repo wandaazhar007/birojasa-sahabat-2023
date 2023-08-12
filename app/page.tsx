@@ -4,6 +4,7 @@ import Hero from './components/hero/Hero'
 import CoverageArea from './components/coverageArea/CoverageArea'
 import Services from './components/services/Services'
 import AdsOne from './components/adsOne/AdsOne'
+import Flow from './components/flow/Flow'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <CoverageArea />
       <Services />
       <AdsOne />
+      <Flow />
     </>
   )
 }

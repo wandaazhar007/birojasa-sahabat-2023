@@ -7,6 +7,7 @@ import AdsOne from './components/adsOne/AdsOne'
 import Flow from './components/flow/Flow'
 import Choose from './components/choose/Choose'
 import AdsTwo from './components/adsTwo/AdsTwo'
+import FaqComponent from './components/faqComponent/FaqComponent'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Flow />
       <Choose />
       <AdsTwo />
+      <FaqComponent />
     </>
   )
 }

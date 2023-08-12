@@ -1,0 +1,83 @@
+  /*
+Author: Wanda Azhar
+Location: Michigan, US
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+  @import '../../styles/variable.scss';
+  @import '../../styles//responsive.scss';
+
+
+  .story {
+    padding: 6rem 0;
+    color: $grey;
+    background-color: $yellow;
+
+    .container {
+      .box-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include Phone600 {
+          flex-direction: column;
+        }
+
+        @include tablet {
+          justify-content: center;
+        }
+
+        .col-left {
+          flex: 1;
+
+          @include tablet {
+            display: flex;
+            justify-content: center;
+          }
+
+          img {
+            width: 30rem;
+            height: 30rem;
+          }
+        }
+
+        .col-right {
+          flex: 3;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          padding: 0 5rem;
+
+          @include largePhone {
+            padding: 0 1rem;
+            flex: 2;
+          }
+
+          @include tablet {
+            padding: 0 auto;
+          }
+
+          .title {
+            font-size: 2rem;
+            color: grey;
+          }
+
+          h1 {
+            font-size: 2.8rem;
+            margin-top: -2rem;
+          }
+
+          .desc {
+            font-size: 1.8rem;
+            line-height: 3rem;
+          }
+        }
+      }
+    }
+  }

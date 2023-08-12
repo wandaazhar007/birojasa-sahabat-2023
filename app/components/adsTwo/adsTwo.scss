@@ -1,0 +1,67 @@
+/*
+Author: Wanda Azhar
+Location: Michigan, US
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+@import '../../styles/variable.scss';
+@import '../../styles//responsive.scss';
+
+.adsTwo {
+  margin-top: 2rem;
+  background: $primary;
+  color: #dedede;
+  min-height: 27.7rem;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    .box-container {
+      border-radius: 1rem;
+      margin: 0 auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+
+        span {
+          color: $white;
+        }
+      }
+
+      .icon {
+        font-size: 1.5rem;
+        position: absolute;
+        color: $white;
+        margin-left: -1.9rem;
+        margin-top: .5rem;
+      }
+
+      .read-more {
+        text-align: center;
+        font-size: 1.8rem;
+        color: $white;
+        text-decoration: underline;
+
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.8rem;
+        color: $white;
+      }
+    }
+  }
+}

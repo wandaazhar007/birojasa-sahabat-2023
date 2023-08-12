@@ -5,6 +5,7 @@ import CoverageArea from './components/coverageArea/CoverageArea'
 import Services from './components/services/Services'
 import AdsOne from './components/adsOne/AdsOne'
 import Flow from './components/flow/Flow'
+import Choose from './components/choose/Choose'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <AdsOne />
       <Flow />
+      <Choose />
     </>
   )
 }

@@ -1,0 +1,170 @@
+/*
+Author: Wanda Azhar
+Location: Michigan, US
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+@import '../../styles/variable.scss';
+@import '../../styles//responsive.scss';
+
+.review {
+  padding: 4rem 0;
+  background-color: $lightGreen;
+
+  .container {
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $grey;
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+
+        p {
+          font-size: 1.6rem;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        .icon {
+          font-size: 3rem;
+          width: 2rem;
+        }
+
+        span {
+          font-size: 2rem;
+          font-weight: 100;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        gap: 2rem;
+
+        .col-left {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          gap: 1rem;
+          padding: 1rem;
+
+          .box {
+            background-color: $darkGreen;
+            border-radius: 1rem;
+            padding: 3rem 3rem 3rem 6rem;
+
+            &::before {
+              content: '"';
+              position: absolute;
+              font-size: 5rem;
+              color: goldenrod;
+              margin-left: -4rem;
+              margin-top: -2rem;
+              font-family: 'Courier New', Courier, monospace;
+            }
+
+            h1 {
+              font-size: 4.6rem;
+            }
+
+            .desc {
+              font-size: 1.8rem;
+            }
+
+            .review-content {
+              font-size: 1.6rem;
+              line-height: 2;
+              text-align: start;
+            }
+
+            .name {
+              font-size: 1.6rem;
+              line-height: 2;
+              text-align: start;
+              margin-top: 2rem;
+              font-weight: bold;
+            }
+          }
+
+          .heading {
+            background-color: transparent;
+            padding: 3rem;
+
+            &::before {
+              content: '';
+            }
+          }
+        }
+
+        .col-right {
+          display: flex;
+          gap: 2rem;
+          flex-direction: column;
+          flex: 1;
+
+          .box {
+            background-color: $darkGreen;
+            border-radius: 1rem;
+            padding: 3rem 3rem 3rem 6rem;
+
+            &::before {
+              content: '"';
+              position: absolute;
+              font-size: 5rem;
+              color: goldenrod;
+              margin-left: -4rem;
+              margin-top: -2rem;
+              font-family: 'Courier New', Courier, monospace;
+            }
+
+            .review-content {
+              font-size: 1.6rem;
+              line-height: 2;
+              text-align: start;
+            }
+
+            .name {
+              font-size: 1.6rem;
+              line-height: 2;
+              text-align: start;
+              margin-top: 2rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .footer-review {
+        p {
+          text-align: center;
+          font-size: 1.6rem;
+          color: grey;
+          margin-top: 3rem;
+
+          a {
+            color: #1385e2;
+            text-decoration: underline;
+          }
+        }
+
+        .icon {
+          width: 2rem;
+          color: green;
+        }
+      }
+    }
+  }
+}

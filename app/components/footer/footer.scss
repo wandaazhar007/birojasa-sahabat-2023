@@ -1,0 +1,141 @@
+/*
+Author: Wanda Azhar
+Location: Michigan, US
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+@import '../../styles/variable.scss';
+@import '../../styles//responsive.scss';
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 5rem;
+  color: var(--white);
+  background: black;
+
+  .container {
+    .box-container {
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+        color: grey;
+      }
+
+      .icons {
+        width: 1rem;
+        color: salmon;
+      }
+
+      .credit {
+        padding: 5rem 0;
+
+        .icons {
+          width: 1.4rem;
+          color: salmon;
+          position: relative;
+          top: .3rem;
+        }
+
+        a {
+          width: 1rem;
+          color: salmon;
+        }
+      }
+
+      .footer-one {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+
+        .col-left {
+          h1 {
+            font-size: 4rem;
+          }
+
+          p {
+            font-size: 1.8rem;
+            text-align: start;
+          }
+        }
+
+        .col-right {
+          display: flex;
+          justify-content: space-between;
+          gap: 4rem;
+          font-size: 1.8rem;
+
+          ul {
+            li {
+              cursor: pointer;
+              line-height: 3rem;
+              color: var(--grey);
+
+              a {
+                color: var(--grey);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-two {
+        .header {
+          display: flex;
+          justify-content: space-between;
+          margin: 3rem 0;
+          font-size: 1.8rem;
+
+          ul {
+            display: flex;
+            gap: 2rem;
+
+            li {
+              cursor: pointer;
+              list-style: none;
+
+              &:nth-child(1) {
+                margin-left: -15rem;
+                position: absolute;
+              }
+            }
+          }
+
+          .icons-social-media {
+            color: var(--white);
+            font-size: 2.5rem;
+            width: 2rem;
+          }
+
+          .whatsapp {
+            width: 2.4rem;
+            position: absolute;
+            margin-left: -2rem;
+            margin-top: -.3rem;
+          }
+        }
+
+        .content {
+          p {
+            text-align: left;
+            font-size: 1.4rem;
+            margin: 1rem 0;
+          }
+
+          h1 {
+            text-align: left;
+            margin: 1rem 0;
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}

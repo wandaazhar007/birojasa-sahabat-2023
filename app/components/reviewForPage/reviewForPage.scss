@@ -1,0 +1,89 @@
+  /*
+Author: Wanda Azhar
+Location: Michigan, US
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+
+
+  @import '../../styles/variable.scss';
+  @import '../../styles//responsive.scss';
+
+  .review-page {
+    background-color: #E5FEFD;
+    padding: 5rem 0;
+    color: $grey;
+
+    .container {
+      .header {
+        text-align: center;
+
+        h1 {
+          font-size: 2.8rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          margin-top: .7rem;
+        }
+
+        .icon-up {
+          width: 1.6rem;
+          color: #1385e2;
+          position: absolute;
+          margin-left: .5rem;
+        }
+
+        span {
+          text-decoration: underline;
+          color: #1385e2;
+          margin-left: 2.5rem;
+        }
+
+        .icon {
+          width: 1.8rem;
+          color: gold;
+        }
+      }
+
+      .box-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 4rem;
+
+        @include Phone600 {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .box {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+          gap: 1rem;
+          background-color: $darkGreen;
+          border-radius: 1rem;
+
+          .name {
+            font-size: 1.8rem;
+          }
+
+          .stars {
+            .icon {
+              color: goldenrod;
+              width: 1.5rem;
+
+            }
+          }
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }

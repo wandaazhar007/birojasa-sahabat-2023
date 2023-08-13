@@ -5,7 +5,7 @@ import { faHeart, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { faGoogle, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <footer className="footer">

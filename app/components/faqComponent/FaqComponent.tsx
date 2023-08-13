@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const FaqComponent = () => {
+const FaqComponent: React.FC = () => {
   return (
     <section className="faq">
       <div className="container">

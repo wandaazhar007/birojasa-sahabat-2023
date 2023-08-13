@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className="hero">
       <div className="container">

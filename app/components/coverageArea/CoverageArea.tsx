@@ -3,7 +3,7 @@ import './coverageArea.scss';
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const CoverageArea = () => {
+const CoverageArea: React.FC = () => {
   return (
     <section className="coverage-area">
       <div className="container">

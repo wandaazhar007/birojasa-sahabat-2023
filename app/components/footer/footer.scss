@@ -21,40 +21,21 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
 
   .container {
     .box-container {
-      p {
-        text-align: center;
-        font-size: 1.5rem;
-        color: grey;
-      }
-
-      .icons {
-        width: 1rem;
-        color: salmon;
-      }
-
-      .credit {
-        padding: 5rem 0;
-
-        .icons {
-          width: 1.4rem;
-          color: salmon;
-          position: relative;
-          top: .3rem;
-        }
-
-        a {
-          width: 1rem;
-          color: salmon;
-        }
-      }
-
       .footer-one {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: space-between;
 
+        @include largePhone {
+          justify-content: center;
+        }
+
         .col-left {
+          @include largePhone {
+            text-align: center;
+          }
+
           h1 {
             font-size: 4rem;
           }
@@ -86,12 +67,47 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
         }
       }
 
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+        color: grey;
+      }
+
+      .icons {
+        width: 1rem;
+        color: salmon;
+      }
+
+      .credit {
+        padding: 5rem 0;
+
+        .icons {
+          width: 1.4rem;
+          color: salmon;
+          position: relative;
+          top: .3rem;
+        }
+
+        a {
+          width: 1rem;
+          color: salmon;
+        }
+      }
+
+
+
       .footer-two {
         .header {
           display: flex;
           justify-content: space-between;
           margin: 3rem 0;
           font-size: 1.8rem;
+
+          @include largePhone {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+          }
 
           ul {
             display: flex;
@@ -100,11 +116,6 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
             li {
               cursor: pointer;
               list-style: none;
-
-              &:nth-child(1) {
-                margin-left: -15rem;
-                position: absolute;
-              }
             }
           }
 
@@ -119,6 +130,12 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
             position: absolute;
             margin-left: -2rem;
             margin-top: -.3rem;
+
+            @include largePhone {
+              width: 2.4rem;
+              margin-left: -1rem;
+              margin-top: -.4rem;
+            }
           }
         }
 
@@ -127,12 +144,20 @@ Description: A passionate web developer based in Michigan, USA, with expertise i
             text-align: left;
             font-size: 1.4rem;
             margin: 1rem 0;
+
+            @include largePhone {
+              text-align: center;
+            }
           }
 
           h1 {
             text-align: left;
             margin: 1rem 0;
             color: grey;
+
+            @include largePhone {
+              text-align: center;
+            }
           }
         }
       }

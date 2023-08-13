@@ -37,9 +37,8 @@ const Footer = () => {
               <div className="header">
                 <p>Copyright BIRO JASA SAHABAT B.V. 2023 ©</p>
                 <ul>
-                  <li>Kontak Kami</li>
                   <li>
-                    <Link href="https://api.whatsapp.com/send?phone=6281318927898&amp;text=Assalamualaikum pak, Saya mau konsultasi perihal surat-surat kendaraan Saya"><FontAwesomeIcon icon={faWhatsapp} className="icons-social-media whatsapp" /></Link>
+                    <Link href="https://api.whatsapp.com/send?phone=6281318927898&amp;text=Assalamualaikum pak, Saya mau konsultasi perihal surat-surat kendaraan Saya"><FontAwesomeIcon icon={faWhatsapp} className="icons-social-media" /></Link>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faPhoneFlip} className="icons-social-media" />

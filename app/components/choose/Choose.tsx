@@ -3,7 +3,7 @@ import './choose.scss';
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Choose = () => {
+const Choose: React.FC = () => {
   return (
     <section className="choose">
       <div className="container">

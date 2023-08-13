@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Flow = () => {
+const Flow: React.FC = () => {
   return (
     <section className="flow">
       <div className="container">

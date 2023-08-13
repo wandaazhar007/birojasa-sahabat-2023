@@ -4,7 +4,7 @@ import { faBicycle, faBook, faCar, faCompressAlt, faEdit, faMotorcycle, faTint, 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
-const Services = () => {
+const Services: React.FC = () => {
   return (
     <section className="services">
       <div className="container">

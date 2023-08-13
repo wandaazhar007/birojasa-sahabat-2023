@@ -7,7 +7,7 @@ import { faBook, faCommentAlt, faContactCard, faHome } from "@fortawesome/free-s
 // import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const pathName = usePathname();
   // console.log(router.pathname);
   return (

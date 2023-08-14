@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Restaurant Website using Next.js, React, And More
+
+Welcome to the Website repository! This project is a dynamic and modern website for a Birojasa Sahabat, developed using Next.js, React, and Node.js. It features an enticing user interface and a seamless browsing experience
+
+<img src="public/images/ss_1.png" alt="Screenshot" width="400"/> <img src="public/images/ss_2.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_2.png" alt="Screenshot" width="400"/> <img src="public/images/ss_4.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_3.png" alt="Screenshot" width="400"/> <img src="public/images/ss_6.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_4.png" alt="Screenshot" width="400"/> <img src="public/images/ss_8.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_5.png" alt="Screenshot" width="400"/> <img src="public/images/ss_10.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_6.png" alt="Screenshot" width="400"/> <img src="public/images/ss_2.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_7.png" alt="Screenshot" width="400"/> <img src="public/images/ss_4.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_8.png" alt="Screenshot" width="400"/> <img src="public/images/ss_6.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_9.png" alt="Screenshot" width="400"/> <img src="public/images/ss_8.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_10.png" alt="Screenshot" width="400"/> <img src="public/images/ss_10.png" alt="Screenshot" width="400"/>
+
+## Features
+
+- User-friendly navigation using React Router DOM for smooth page transitions.
+- Visually appealing UI crafted with the power of React and enhanced with animations from the Framer Motion library.
+- Font Awesome icons add a touch of elegance to the design and improve user interaction.
+- Utilize SASS for easy and organized styling, ensuring a consistent and aesthetically pleasing look.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org): React framework for server-rendered React applications, optimizing performance and SEO.
+- [React](https://reactjs.org): Building interactive and dynamic user interfaces.
+- [Node.js](https://nodejs.org): Runtime environment for server-side JavaScript execution.
+- [MySQL](https://www.mysql.com): Robust and scalable relational database management system.
+- [Font Awesome](https://fontawesome.com): Comprehensive icon set and toolkit, enhancing visual elements.
+- [SASS](https://sass-lang.com): CSS extension language for maintaining clean and organized styles.
+- [Framer Motion](https://www.framer.com/motion/): Add smooth animations and transitions to elements for an engaging experience.
+- [React Router DOM](https://reactrouter.com/web/guides/quick-start): Dynamic routing for single-page applications, improving navigation.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository to your local machine.
+2. Navigate to the project directory: `cd restaurant-website`.
+3. Install the required dependencies: `npm install`.
+4. Set up the database configuration in `backend/config/database.js`.
+5. Run the backend server: `npm run server`.
+6. Navigate to the `frontend` directory: `cd frontend`.
+7. Run the frontend application: `npm run dev`.
+8. Open your browser and visit: `http://localhost:3001`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Contributing
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Contributions are welcome! Feel free to open a pull request or an issue if you find any bugs or want to suggest improvements.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project is licensed under the [MIT License].
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Developed by [Wanda Azhar](https://github.com/wandaazhar007)
